@@ -1,0 +1,68 @@
+[
+	{
+		"id": 1,
+		"title": "Web Development",
+		"slug": "web-development",
+		"teacher": "Alejandro Dotor",
+		"price_original": "115.00",
+		"price": "29.90",
+		"bg_image": "course_1.jpg",
+		"fav_status": "false",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis, dolor eu porta aliquet, mi elit rutrum odio, tincidunt vestibulum velit felis at nulla. Maecenas faucibus metus eu feugiat cursus. Nullam venenatis tempor vulputate. Integer non augue elit. Sed congue sapien sit amet sem sodales bibendum. Cras lobortis odio eu cursus eleifend. Nunc eget ipsum eget magna facilisis finibus sit amet vitae purus. Suspendisse efficitur nunc ac venenatis vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+	},
+	{
+		"id": 2,
+		"title": "Cooking",
+		"slug": "cooking",
+		"teacher": "Jamie Kaiser",
+		"price_original": "75.00",
+		"price": "19.90",
+		"bg_image": "course_2.jpg",
+		"fav_status": "false",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis, dolor eu porta aliquet, mi elit rutrum odio, tincidunt vestibulum velit felis at nulla. Maecenas faucibus metus eu feugiat cursus. Nullam venenatis tempor vulputate. Integer non augue elit. Sed congue sapien sit amet sem sodales bibendum. Cras lobortis odio eu cursus eleifend. Nunc eget ipsum eget magna facilisis finibus sit amet vitae purus. Suspendisse efficitur nunc ac venenatis vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+	},
+	{
+		"id": 3,
+		"title": "Guitar",
+		"slug": "guitar",
+		"teacher": "Christiana Greenaway",
+		"price_original": "50.00",
+		"price": "9.90",
+		"bg_image": "course_3.jpg",
+		"fav_status": "false",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis, dolor eu porta aliquet, mi elit rutrum odio, tincidunt vestibulum velit felis at nulla. Maecenas faucibus metus eu feugiat cursus. Nullam venenatis tempor vulputate. Integer non augue elit. Sed congue sapien sit amet sem sodales bibendum. Cras lobortis odio eu cursus eleifend. Nunc eget ipsum eget magna facilisis finibus sit amet vitae purus. Suspendisse efficitur nunc ac venenatis vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+	},
+	{
+		"id": 4,
+		"title": "Drawing",
+		"slug": "drawing",
+		"teacher": "Layla-Mae Wickens",
+		"price_original": "50.00",
+		"price": "29.90",
+		"bg_image": "course_4.jpg",
+		"fav_status": "false",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis, dolor eu porta aliquet, mi elit rutrum odio, tincidunt vestibulum velit felis at nulla. Maecenas faucibus metus eu feugiat cursus. Nullam venenatis tempor vulputate. Integer non augue elit. Sed congue sapien sit amet sem sodales bibendum. Cras lobortis odio eu cursus eleifend. Nunc eget ipsum eget magna facilisis finibus sit amet vitae purus. Suspendisse efficitur nunc ac venenatis vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+	},
+	{
+		"id": 5,
+		"title": "Painting",
+		"slug": "painting",
+		"teacher": "Mikail Squires",
+		"price_original": "65.00",
+		"price": "29.90",
+		"bg_image": "course_5.jpg",
+		"fav_status": "false",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis, dolor eu porta aliquet, mi elit rutrum odio, tincidunt vestibulum velit felis at nulla. Maecenas faucibus metus eu feugiat cursus. Nullam venenatis tempor vulputate. Integer non augue elit. Sed congue sapien sit amet sem sodales bibendum. Cras lobortis odio eu cursus eleifend. Nunc eget ipsum eget magna facilisis finibus sit amet vitae purus. Suspendisse efficitur nunc ac venenatis vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+	},
+	{
+		"id": 6,
+		"title": "Interior Design",
+		"slug": "interior-design",
+		"teacher": "Mathias Wilde",
+		"price_original": "99.00",
+		"price": "19.90",
+		"bg_image": "course_6.jpg",
+		"fav_status": "false",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis, dolor eu porta aliquet, mi elit rutrum odio, tincidunt vestibulum velit felis at nulla. Maecenas faucibus metus eu feugiat cursus. Nullam venenatis tempor vulputate. Integer non augue elit. Sed congue sapien sit amet sem sodales bibendum. Cras lobortis odio eu cursus eleifend. Nunc eget ipsum eget magna facilisis finibus sit amet vitae purus. Suspendisse efficitur nunc ac venenatis vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+	}
+]
