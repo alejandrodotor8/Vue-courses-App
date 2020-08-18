@@ -1,10 +1,12 @@
 <template>
 	<div class="container pt-4 mb-4">
 		<div class="row justify-content-md-center" id="header">
-			<div class="col">
+			<div class="col-md-auto">
 				<a class="menu-bar-img">
 					<img src="@/assets/img/logo.png" width="50px" />
 				</a>
+			</div>
+			<div class="col">
 				<div class="menu-bar-text">
 					<router-link class="item-menu" to="/">Home</router-link>
 					<router-link class="item-menu" to="/courses"
@@ -56,6 +58,7 @@
 		},
 		data() {
 			return {
+				mobileView: false,
 				searchWord: null,
 			};
 		},
