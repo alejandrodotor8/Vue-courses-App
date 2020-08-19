@@ -27,7 +27,7 @@
 <script>
 	import Itemcart from '../Cart/Itemcart';
 	export default {
-		name: 'Cart',
+		name: 'TheCart',
 		components: {
 			Itemcart,
 		},

@@ -1,12 +1,5 @@
 <template>
-	<div class="container pt-4 mb-4">
-		<div class="row justify-content-md-center" id="header">
-			<div class="col-md-auto">
-				<a class="menu-bar-img">
-					<img src="@/assets/img/logo.png" width="50px" />
-				</a>
-			</div>
-			<div class="col">
+   <div class="col">
 				<div class="menu-bar-text">
 					<router-link class="item-menu" to="/">Home</router-link>
 					<router-link class="item-menu" to="/courses"
@@ -14,8 +7,6 @@
 					>
 					<router-link class="item-menu" to="/about">About</router-link>
 				</div>
-			</div>
-			<div class="col">
 				<div class="menu-bar-part2">
 					<input
 						@keyup="searchingWord"
@@ -35,7 +26,7 @@
 						>
 							{{ $store.getters.cartCount }}
 						</div>
-						<div id="cart"><Cart /></div>
+						<div id="cart"><TheCart /></div>
 					</div>
 					<a href="#"
 						><img
@@ -45,20 +36,16 @@
 					/></a>
 				</div>
 			</div>
-		</div>
-	</div>
 </template>
-
 <script>
-	import Cart from './Cart/Cart';
+	import TheCart from '@/components/Cart/TheCart';
 	export default {
-		name: 'Header',
+		name: 'TheHeader',
 		components: {
-			Cart,
+			TheCart,
 		},
 		data() {
 			return {
-				mobileView: false,
 				searchWord: null,
 			};
 		},
@@ -67,24 +54,12 @@
 				return this.$store.dispatch('filterAction', this.searchWord);
 			},
 		},
+
 	};
 </script>
-
 <style lang="scss">
 	@import '@/assets/styles/style.scss';
 
-	::placeholder {
-		color: $font-dark-gray-color;
-		font-size: 15px;
-		font-weight: 400;
-		line-height: 1.5;
-	}
-	#header {
-		background-color: $white-color;
-		box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.12);
-		border-radius: 15px;
-		padding: 10px 0;
-	}
 	.item-menu {
 		text-decoration: none;
 		color: $font-dark-gray-color;
@@ -100,18 +75,7 @@
 			color: $green-color;
 		}
 	}
-	.menu-bar-img {
-		min-width: 50px;
-		max-width: 50px;
-		float: left;
-	}
-	.menu-bar-text {
-		height: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-	}
+	
 	.form-search {
 		color: $font-dark-gray-color !important;
 		float: left;
@@ -120,6 +84,14 @@
 		border: 1.2px solid $font-gray-color;
 		border-radius: 0.7rem;
 		margin: 0 10%;
+	}
+	.menu-bar-text {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		float: left;
 	}
 	.menu-bar-part2 {
 		height: 100%;
@@ -152,4 +124,5 @@
 		padding-bottom: 4px;
 		padding-left: 5px;
 	}
+	
 </style>
