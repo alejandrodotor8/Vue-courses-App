@@ -1,7 +1,7 @@
 # Vue.js Courses aplication
 
-### APP
-See the app[link](https://vue-courses-app.netlify.app).
+### App Link
+[Vue-courses-App](https://vue-courses-app.netlify.app).
 
 ## Project setup
 ```
