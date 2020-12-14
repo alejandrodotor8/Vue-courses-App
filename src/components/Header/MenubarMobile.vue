@@ -18,7 +18,7 @@
 		<div class="menu-bar-part2-mobile">
 			<input
 				@keyup="searchingWord"
-            @keyup.enter="changeStatus"
+				@keyup.enter="changeStatus"
 				v-model="searchWord"
 				class="form-search-mobile"
 				placeholder="Search courses..."
@@ -62,8 +62,7 @@
 			},
 			searchingWord() {
 				return this.$store.dispatch('filterAction', this.searchWord);
-         },
-         
+			},
 		},
 	};
 </script>
@@ -82,14 +81,21 @@
 		top: 0px;
 		left: 0px;
 		z-index: 10;
-		clip-path: circle(100px at 100% -15%);
+		opacity: 0;
+		-webkit-clip-path: circle(100px at 100% 0);
+		clip-path: circle(100px at 100% 0);
+		-webkit-transition: all 0.5s ease-out;
+		-webkit-transition: -webkit-transform all 0.5s ease-out;
 		transition: all 0.5s ease-out;
 		pointer-events: none;
 		&.open {
+			-webkit-clip-path: circle(1400px at 100% -15%);
 			clip-path: circle(1400px at 100% -15%);
 			pointer-events: all;
+			opacity: 1;
 		}
 	}
+
 	.item-menu-mobile {
 		text-decoration: none;
 		color: $font-dark-color;

@@ -40,7 +40,7 @@
 <script>
 	import TheCart from '@/components/Cart/TheCart';
 	export default {
-		name: 'TheHeader',
+		name: 'MenubarDesk',
 		components: {
 			TheCart,
 		},
