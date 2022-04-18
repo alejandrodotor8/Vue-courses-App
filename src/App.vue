@@ -16,6 +16,17 @@
 			<p class="text-slate-500">You have a new message!</p>
 		</div>
 	</div>
+	<br />
+	<div class="m-4">
+		<router-link to="/" class="py-2 px-4 mx-2 bg-green-500 text-white text-sm font-semibold rounded-md shadow"
+			>Home</router-link
+		>
+		<router-link to="/about" class="py-2 px-4 mx-2 bg-green-500 text-white text-sm font-semibold rounded-md shadow"
+			>About</router-link
+		>
+	</div>
+
+	<router-view></router-view>
 </template>
 
 <style>
