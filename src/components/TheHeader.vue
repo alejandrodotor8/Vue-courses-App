@@ -19,7 +19,7 @@
 				class="mx-6 appearance-none border rounded w-56 h-8 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-emerald-500"
 			/>
 			<img src="@/assets/img/shoppingcart.svg" class="w-8 mx-3" />
-			<router-link to="/profile" class="mx-3"><img src="@/assets/img/profile.png" class="w-11"/></router-link>
+			<router-link to="/profile" class="mx-3"><img src="@/assets/img/profile.png" style="width:44px;"/></router-link>
 		</div>
 	</div>
 </template>
