@@ -14,4 +14,10 @@
 			</div>
 		</div>
 	</div>
+	<div>
+		<Cart />
+	</div>
 </template>
+<script setup>
+	import Cart from '@/components/Cart.vue'
+</script>
