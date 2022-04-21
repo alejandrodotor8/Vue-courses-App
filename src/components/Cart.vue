@@ -1,6 +1,16 @@
 <template>
-	<div class="m-4 shadow-xl rounded-lg w-60 h-80">
+	<div class="m-8 shadow-xl rounded-lg w-60 h-82 text-gray-700">
 		<img src="@/assets/img/course_1.jpg" alt="img" class="w-60 rounded-t-lg" />
-		<span class="text-base font-semibold m-4">Web Development</span>
+		<span class="block  text-base font-semibold mt-4 mx-6">Web Development</span>
+		<span class="block text-sm mx-6 mt-2">Alejandro Dotor</span>
+		<img src="@/assets/img/stars.svg" class="mx-6" style="width: 58px;" />
+		<div class="flex text-sm mx-6 justify-end my-2">
+			<span class="block text-slate-400" style="text-decoration: line-through">$ 115.00</span>
+			<span class="block font-semibold">$ 29.90</span>
+		</div>
+		<div class="flex items-center justify-between mx-6 mt-4">
+			<button><img src="@/assets/img/Fav-no.svg" /></button>
+			<button class="w-32 py-1 bg-vue-400 rounded-lg text-white border-2 border-vue-300">Add to cart</button>
+		</div>
 	</div>
 </template>
