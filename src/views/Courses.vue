@@ -9,13 +9,15 @@
 				<a class="mx-2" href="#">Favs</a>
 			</div>
 			<div class="flex m-4">
-				<a href="#"><img src="@/assets/img/icon_courses2.svg" style="width:40px;"/></a>
-				<a href="#"><img src="@/assets/img/icon_courses1.svg" style="width:40px;"/></a>
+				<a href="#"><img src="/img/svg/icon_courses2.svg" style="width:40px;"/></a>
+				<a href="#"><img src="/img/svg/icon_courses1.svg" style="width:40px;"/></a>
 			</div>
 		</div>
 	</div>
-	<div>
-		<Cart />
+	<div
+		class="w-9/12 mx-auto my-12  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 justify-items-center gap-x-5 gap-y-16"
+	>
+		<Cart v-for="course in $store.state.listCourses" :key="course.id" :course="course" />
 	</div>
 </template>
 <script setup>
