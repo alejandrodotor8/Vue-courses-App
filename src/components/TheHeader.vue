@@ -26,11 +26,13 @@
 
 <script setup>
 	import { ref } from 'vue'
+	import { useStore } from 'vuex'
 
 	const word = ref('')
+	const store = useStore()
 
 	function filterCourse() {
-		console.log(word.value)
+		store.commit('filterCourses', word.value)
 	}
 </script>
 
