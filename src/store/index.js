@@ -7,6 +7,7 @@ const store = createStore({
 		return {
 			listCourses,
 			filtered: listCourses,
+			favCourses: [],
 		}
 	},
 	mutations: {
