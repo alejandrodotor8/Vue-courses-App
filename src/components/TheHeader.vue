@@ -37,7 +37,7 @@
 </script>
 
 <style scoped>
-	.router-link-exact-active {
+	.courses-active-route {
 		color: #41b883;
 	}
 </style>
