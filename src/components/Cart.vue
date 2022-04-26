@@ -1,6 +1,6 @@
 <template>
 	<div class="shadow-xl rounded-lg w-60 h-82 text-gray-700">
-		<img :src="'/img/courses/' + course.bg_image" alt="img" class="w-60 rounded-t-lg" />
+		<img :src="'/img/courses/' + course.bg_image" :alt="course.title" class="w-60 rounded-t-lg" />
 		<span class="block  text-base font-semibold mt-4 mx-6">{{ course.title }}</span>
 		<span class="block text-sm mx-6 mt-2">{{ course.teacher }}</span>
 		<img src="/img/svg/stars.svg" class="mx-6" style="width: 58px;" />
