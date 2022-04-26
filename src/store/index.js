@@ -11,7 +11,11 @@ const store = createStore({
 	},
 	mutations: {
 		filterCourses(state, word) {
-			state.filtered = state.listCourses.filter((item) => item.title.toLowerCase().includes(word.toLowerCase()))
+			state.filtered = state.listCourses.filter(
+				(item) =>
+					item.title.toLowerCase().includes(word.toLowerCase()) ||
+					item.teacher.toLowerCase().includes(word.toLowerCase())
+			)
 		},
 	},
 })

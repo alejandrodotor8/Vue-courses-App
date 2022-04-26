@@ -1,14 +1,14 @@
 <template>
-	<div class="w-7/12 mx-auto my-8 py-2 flex justify-between">
+	<header class="w-7/12 mx-auto my-8 py-2 flex justify-between">
 		<div class="flex items-center">
 			<router-link to="/">
 				<img src="/img/logo.png" class="w-10 mx-3" />
 			</router-link>
-			<div class="ml-14 text-slate-700">
+			<nav class="ml-14 text-slate-700">
 				<router-link to="/" class="mx-2">Home</router-link>
 				<router-link to="/courses" class="mx-2">Courses</router-link>
 				<router-link to="/about" class="mx-2">About</router-link>
-			</div>
+			</nav>
 		</div>
 		<div class="flex items-center">
 			<input
@@ -21,7 +21,7 @@
 			<img src="/img/svg/shoppingcart.svg" class="w-8 mx-3" />
 			<router-link to="/profile" class="mx-3"><img src="img/profile.png" style="width:44px;"/></router-link>
 		</div>
-	</div>
+	</header>
 </template>
 
 <script setup>
