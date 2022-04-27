@@ -20,7 +20,7 @@
 <style lang="scss">
 	@import "@/assets/styles/style.scss";
 	* {
-		font-family: Helvetica Neue;
+		font-family: Arial, Helvetica, sans-serif;
 	}
 	.slide-enter-active,
 	.slide-leave-active{
