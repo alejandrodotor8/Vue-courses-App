@@ -35,9 +35,3 @@
 		store.commit('filterCourses', word.value)
 	}
 </script>
-
-<style scoped>
-	.courses-active-route {
-		color: #41b883;
-	}
-</style>
