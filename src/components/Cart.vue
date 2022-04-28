@@ -1,5 +1,5 @@
 <template>
-	<router-link :to="{ name: 'DetailCourse', params: { slug: course.slug } }">
+	<router-link :to="{ name: 'DetailCourse', params: { id: course.id, slug: course.slug } }">
 		<div class="shadow-xl rounded-lg w-60 h-82 text-gray-700">
 			<img :src="'/img/courses/' + course.bg_image" :alt="course.title" class="w-60 rounded-t-lg" />
 			<span class="block  text-base font-semibold mt-4 mx-6">{{ course.title }}</span>
@@ -13,7 +13,10 @@
 			</div>
 			<div class="flex items-center justify-between mx-6 mt-4">
 				<button><img src="/img/svg/Fav-no.svg" /></button>
-				<button class="w-32 py-1 bg-vue-400 rounded-lg text-white border-2 border-vue-300">
+				<button
+					@click.prevent="addToCart(course.id)"
+					class="w-32 py-1 bg-vue-400 rounded-lg text-white border-2 border-vue-300"
+				>
 					Add to cart
 				</button>
 			</div>
@@ -24,4 +27,7 @@
 	const props = defineProps({
 		course: Object,
 	})
+	function addToCart(course) {
+		console.log(course)
+	}
 </script>
