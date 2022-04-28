@@ -5,10 +5,12 @@
 
 <script>
 	export default {
-		name: 'CourseDetail',
+		props: {
+			id: { type: Number, required: true },
+		},
 		computed: {
 			course() {
-				return this.$store.state.listCourses.find((course) => course.slug === this.$route.params.slug)
+				return this.$store.state.listCourses.find((course) => course.id === this.id)
 			},
 		},
 	}

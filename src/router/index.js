@@ -6,7 +6,12 @@ const routes = [
 	{ path: '/courses', name: 'Courses', component: () => import('@/views/Courses.vue') },
 	{ path: '/about', name: 'About', component: () => import('@/views/About.vue') },
 	{ path: '/profile', name: 'Profile', component: () => import('@/views/Profile.vue') },
-	{ path: '/courses/:slug', name: 'DetailCourse', component: () => import('@/views/CourseDetail.vue') },
+	{
+		path: '/courses/:slug',
+		name: 'DetailCourse',
+		component: () => import('@/views/CourseDetail.vue'),
+		props: (route) => ({ id: parseInt(route.params.id) }),
+	},
 ]
 
 const router = createRouter({
