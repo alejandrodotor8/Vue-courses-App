@@ -6,7 +6,7 @@
 			</router-link>
 			<nav class="ml-14 text-slate-700">
 				<router-link to="/" class="mx-2">Home</router-link>
-				<router-link to="/courses" class="mx-2">Courses</router-link>
+				<router-link to="/courses/all" class="mx-2">Courses</router-link>
 				<router-link to="/about" class="mx-2">About</router-link>
 			</nav>
 		</div>
