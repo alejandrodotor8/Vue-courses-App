@@ -6,7 +6,5 @@
 
 <template>
 	<TheHeader />
-	<main>
-		<router-view :key="$route.path"></router-view>
-	</main>
+	<router-view :key="$route.path"></router-view>
 </template>

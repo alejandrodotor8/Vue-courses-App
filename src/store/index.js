@@ -7,7 +7,9 @@ const store = createStore({
 		return {
 			listCourses,
 			filtered: listCourses,
-			favCourses: [],
+			favCoursesID: [1, 4, 5],
+			recentCoursesID: [6, 2],
+			userCoursesID: [3],
 		}
 	},
 	mutations: {
@@ -17,6 +19,35 @@ const store = createStore({
 					item.title.toLowerCase().includes(word.toLowerCase()) ||
 					item.teacher.toLowerCase().includes(word.toLowerCase())
 			)
+		},
+	},
+	getters: {
+		courses(state) {
+			return state.listCourses
+		},
+		filteredCourses(state) {
+			return state.filtered
+		},
+		favCourses(state) {
+			let fav = []
+			state.favCoursesID.forEach((id) => {
+				fav.push(state.listCourses.find((course) => course.id == id))
+			})
+			return fav
+		},
+		recentCourses(state) {
+			let recent = []
+			state.recentCoursesID.forEach((id) => {
+				recent.push(state.listCourses.find((course) => course.id == id))
+			})
+			return recent
+		},
+		userCourses(state) {
+			let user = []
+			state.userCoursesID.forEach((id) => {
+				user.push(state.listCourses.find((course) => course.id == id))
+			})
+			return user
 		},
 	},
 })

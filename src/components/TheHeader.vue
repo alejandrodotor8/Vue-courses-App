@@ -6,14 +6,14 @@
 			</router-link>
 			<nav class="ml-14 text-slate-700">
 				<router-link to="/" class="mx-2">Home</router-link>
-				<router-link to="/courses" class="mx-2">Courses</router-link>
+				<router-link to="/courses/all" class="mx-2">Courses</router-link>
 				<router-link to="/about" class="mx-2">About</router-link>
 			</nav>
 		</div>
 		<div class="flex items-center">
 			<input
 				v-model="word"
-				@keyup="filterCourse"
+				@keyup.enter="filterCourse"
 				type="text"
 				placeholder="Search..."
 				class="mx-6 appearance-none border rounded w-56 h-8 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-emerald-500"
@@ -26,18 +26,15 @@
 
 <script setup>
 	import { ref } from 'vue'
+	import { useRouter } from 'vue-router'
 	import { useStore } from 'vuex'
 
 	const word = ref('')
 	const store = useStore()
+	const router = useRouter()
 
 	function filterCourse() {
+		router.push('/courses/search')
 		store.commit('filterCourses', word.value)
 	}
 </script>
-
-<style scoped>
-	.courses-active-route {
-		color: #41b883;
-	}
-</style>
