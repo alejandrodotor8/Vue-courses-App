@@ -16,3 +16,9 @@
 	</div>
 	<router-view />
 </template>
+<script setup>
+	import { useRoute, useRouter } from 'vue-router'
+	const route = useRoute()
+	const router = useRouter()
+	if (route.fullPath == '/courses') router.push('/courses/all')
+</script>

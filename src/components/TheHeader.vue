@@ -13,7 +13,7 @@
 		<div class="flex items-center">
 			<input
 				v-model="word"
-				@keyup="filterCourse"
+				@keyup.enter="filterCourse"
 				type="text"
 				placeholder="Search..."
 				class="mx-6 appearance-none border rounded w-56 h-8 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-emerald-500"
@@ -26,12 +26,15 @@
 
 <script setup>
 	import { ref } from 'vue'
+	import { useRouter } from 'vue-router'
 	import { useStore } from 'vuex'
 
 	const word = ref('')
 	const store = useStore()
+	const router = useRouter()
 
 	function filterCourse() {
+		router.push('/courses/search')
 		store.commit('filterCourses', word.value)
 	}
 </script>
