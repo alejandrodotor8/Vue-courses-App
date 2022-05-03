@@ -7,7 +7,6 @@ const routes = [
 		name: 'Courses',
 		component: () => import('@/views/Courses/Courses.vue'),
 		beforeEnter: (to, from) => {
-			console.log(to.params.slug)
 			const paths = ['all', 'recently', 'mycourses', 'favs', 'search']
 			if (!paths.includes(to.params.slug))
 				return {
