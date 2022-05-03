@@ -19,7 +19,7 @@
 		slug: { type: String, required: true },
 	})
 	const store = useStore()
-	let courses = ref([])
+	let courses = ref(store.getters.courses)
 	switch (props.slug) {
 		case 'all':
 			courses.value = store.getters.courses
@@ -37,7 +37,7 @@
 			courses.value = store.getters.filteredCourses
 			break
 		default:
-			courses.value = store.courses
+			courses.value = store.getters.courses
 			break
 	}
 	watch(
