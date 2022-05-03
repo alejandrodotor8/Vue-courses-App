@@ -9,7 +9,7 @@ const store = createStore({
 			filtered: listCourses,
 			favCoursesID: [1, 4, 5],
 			recentCoursesID: [6, 2],
-			userCoursesID: [3],
+			userCoursesID: [],
 		}
 	},
 	mutations: {

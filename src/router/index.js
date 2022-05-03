@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home.vue'
+
+import sourceData from '@/assets/courses.json'
+
 const routes = [
 	{ path: '/', name: 'Home', component: Home },
 	{
@@ -7,8 +10,9 @@ const routes = [
 		name: 'Courses',
 		component: () => import('@/views/Courses/Courses.vue'),
 		beforeEnter: (to, from) => {
+			const exists = sourceData.find((item) => item.slug == to.params.slug)
 			const paths = ['all', 'recently', 'mycourses', 'favs', 'search']
-			if (!paths.includes(to.params.slug))
+			if (!paths.includes(to.params.slug) && !exists)
 				return {
 					name: 'NotFound',
 					//allows keeping the URL
