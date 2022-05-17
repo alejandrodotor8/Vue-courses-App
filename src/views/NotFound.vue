@@ -8,4 +8,3 @@
 		</div>
 	</main>
 </template>
-<style scope></style>
