@@ -1,6 +1,6 @@
 <template>
 	<main class="text-vlue-600">
-		<section class="flex items-center justify-center p-10">
+		<section class="flex items-center justify-center px-10 py-20">
 			<img src="/img/home/enjoy.png" alt="enjoy learning image" class="w-4/12" />
 			<div class="w-5/12 px-10">
 				<h1 class="text-6xl font-bold pb-4">Make your <span class="text-vorange-500">learning</span><br />Enjoyable</h1>
@@ -17,6 +17,13 @@
 					</button>
 				</div>
 			</div>
+		</section>
+		<section class="flex items-center justify-center px-8 flex-col">
+			<h2 class="text-3xl pb-8">What do you want to learn today?</h2>
+
+			<img src="/img/svg/arrow.svg" alt="arrow" class="m-2 w-6" />
+			<img src="/img/svg/arrow.svg" alt="arrow" class="m-2 w-6" />
+			<span class="text-vue-400 text-xl m-2">SCROLL</span>
 		</section>
 	</main>
 </template>
