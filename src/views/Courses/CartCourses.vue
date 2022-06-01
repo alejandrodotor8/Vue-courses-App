@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-	import Cart from '@/components/Cart.vue'
+	import Cart from '@/components/Courses/Cart.vue'
 	import { ref, watch } from 'vue'
 	import { useStore } from 'vuex'
 

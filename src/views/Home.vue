@@ -25,5 +25,25 @@
 			<img src="/img/svg/arrow.svg" alt="arrow" class="m-2 w-6" />
 			<span class="text-vue-400 text-xl m-2">SCROLL</span>
 		</section>
+		<section class="flex items-center justify-center flex-col px-8 bg-vorange-500 my-10 p-8">
+			<h2 class="text-4xl text-white font-medium">Our best careers</h2>
+			<div class="grid gap-x-20 gap-y-10 grid-cols-3 grid-rows-2 my-8">
+				<career v-for="item in careers" :key="item.id" :name="item.name" :info="item.info" />
+			</div>
+			<button class="btn bg-vue-400 text-white border-2 border-white">Explore more</button>
+		</section>
 	</main>
 </template>
+
+<script setup>
+	import career from '@/components/Home/Hcareer.vue'
+
+	const careers = [
+		{ id: 1, name: 'Web Development', info: '+100 courses', img: '', url: '' },
+		{ id: 2, name: 'Software Enineer', info: '+100 courses', img: '', url: '' },
+		{ id: 3, name: 'Data Bases', info: '+100 courses', img: '', url: '' },
+		{ id: 4, name: 'Cooking', info: '+100 courses', img: '', url: '' },
+		{ id: 5, name: 'Project Management', info: '+100 courses', img: '', url: '' },
+		{ id: 6, name: 'Graphic Design', info: '+100 courses', img: '', url: '' },
+	]
+</script>
