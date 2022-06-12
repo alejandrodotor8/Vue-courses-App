@@ -39,13 +39,15 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac elementum tellus aliquet maecenas arcu adipiscing
 				nulla vel.
 			</p>
-			<img class="w-8/12" src="/img/home/platforms.png" alt="people studing" />
+			<img class="w-8/12 py-4" src="/img/home/platforms.png" alt="people studing" />
 		</section>
+		<TheFooter></TheFooter>
 	</main>
 </template>
 
 <script setup>
 	import career from '@/components/Home/Hcareer.vue'
+	import TheFooter from '../components/Home/TheFooter.vue'
 
 	const careers = [
 		{ id: 1, name: 'Web Development', info: '+100 courses', img: '', url: '' },
