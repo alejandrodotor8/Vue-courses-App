@@ -3,7 +3,10 @@
 		<div class="w-2/4 p-10">
 			<div class="flex items-center justify-between my-4">
 				<span class="block text-base my-3">{{ course.teacher }}</span>
-				<button><img src="/img/svg/Fav-no.svg" class="w-10 mx-3" /></button>
+				<button @click.prevent="changeFav(course.id)">
+					<img v-show="isFav" src="/img/svg/Fav.svg" class="w-10 mx-3" />
+					<img v-show="!isFav" src="/img/svg/Fav-no.svg" class="w-10 mx-3" />
+				</button>
 			</div>
 			<h1 v-text="course.title" class="text-5xl"></h1>
 			<img src="/img/svg/stars.svg" class="mt-2" style="width: 158px;" />
@@ -37,6 +40,17 @@
 		computed: {
 			course() {
 				return this.$store.state.listCourses.find((course) => course.id === this.id)
+			},
+			isFav() {
+				return this.$store.state.favCoursesID.includes(this.id)
+			},
+		},
+		methods: {
+			changeFav(id) {
+				this.$store.commit('changeFavStatus', id)
+			},
+			addToCart(id) {
+				this.$store.commit('addCourseToCart', id)
 			},
 		},
 	}
