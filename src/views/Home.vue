@@ -18,14 +18,15 @@
 				</div>
 			</div>
 		</section>
-		<section class="flex items-center justify-center px-8 flex-col">
-			<h2 class="text-3xl pb-8">What do you want to learn today?</h2>
-
-			<img src="/img/svg/arrow.svg" alt="arrow" class="m-2 w-6" />
-			<img src="/img/svg/arrow.svg" alt="arrow" class="m-2 w-6" />
-			<span class="text-vue-400 text-xl m-2">SCROLL</span>
+		<section class="px-8 text-center">
+			<h2 class="text-3xl pb-16">What do you want to learn today?</h2>
+			<div class="flex items-center justify-center flex-col animate-bounce">
+				<img src="/img/svg/arrow.svg" alt="arrow" class="m-2 w-6" />
+				<img src="/img/svg/arrow.svg" alt="arrow" class="m-2 w-6" />
+				<span class="text-vue-400 text-xl m-2">SCROLL</span>
+			</div>
 		</section>
-		<section class="flex items-center justify-center flex-col px-8 bg-vorange-500 my-10 p-8">
+		<section class="flex items-center justify-center flex-col bg-vorange-500 my-20 p-8">
 			<h2 class="text-4xl text-white font-medium">Our best careers</h2>
 			<div class="grid gap-x-20 gap-y-10 grid-cols-3 grid-rows-2 my-8">
 				<career v-for="item in careers" :key="item.id" :name="item.name" :info="item.info" />
@@ -39,7 +40,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac elementum tellus aliquet maecenas arcu adipiscing
 				nulla vel.
 			</p>
-			<img class="w-8/12 py-4" src="/img/home/platforms.png" alt="people studing" />
+			<img class="w-8/12 py-8" src="/img/home/platforms.png" alt="people studing" />
 		</section>
 		<TheFooter></TheFooter>
 	</main>
