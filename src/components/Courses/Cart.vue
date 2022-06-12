@@ -12,7 +12,10 @@
 				<span class="block font-semibold">{{ course.price }}</span>
 			</div>
 			<div class="flex items-center justify-between mx-6 mt-4">
-				<button><img src="/img/svg/Fav-no.svg" /></button>
+				<button @click.prevent="changeFav(course.id)">
+					<img v-show="isFav" src="/img/svg/Fav.svg" />
+					<img v-show="!isFav" src="/img/svg/Fav-no.svg" />
+				</button>
 				<button
 					@click.prevent="addToCart(course.id)"
 					class="w-32 py-1 bg-vue-400 rounded-lg text-white border-2 border-vue-300"
@@ -24,10 +27,20 @@
 	</router-link>
 </template>
 <script setup>
+	import { computed } from 'vue'
+	import { useStore } from 'vuex'
+
 	const props = defineProps({
 		course: Object,
 	})
-	function addToCart(course) {
-		console.log(course)
+	const store = useStore()
+
+	const isFav = computed(() => store.state.favCoursesID.includes(props.course.id))
+	//Funciones
+	function addToCart(id) {
+		store.commit('addCourseToCart', id)
+	}
+	function changeFav(id) {
+		store.commit('changeFavStatus', id)
 	}
 </script>

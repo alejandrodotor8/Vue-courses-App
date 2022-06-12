@@ -10,15 +10,28 @@ const store = createStore({
 			favCoursesID: [1, 4, 5],
 			recentCoursesID: [6, 2],
 			userCoursesID: [],
+			cart: [],
 		}
 	},
 	mutations: {
-		filterCourses(state, word) {
-			state.filtered = state.listCourses.filter(
+		filterCourses({ filtered, listCourses }, word) {
+			filtered = listCourses.filter(
 				(item) =>
 					item.title.toLowerCase().includes(word.toLowerCase()) ||
 					item.teacher.toLowerCase().includes(word.toLowerCase())
 			)
+		},
+		addCourseToCart({ cart }, courseID) {
+			cart.push(courseID)
+		},
+		changeFavStatus({ favCoursesID }, courseID) {
+			let index = favCoursesID.indexOf(courseID)
+			if (index > -1) {
+				favCoursesID.splice(index, 1)
+			} else {
+				favCoursesID.push(courseID)
+			}
+			console.log(favCoursesID)
 		},
 	},
 	getters: {
