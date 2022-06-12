@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-white flex items-center justify-between3 p-3 rounded-md">
+	<div class="bg-white flex items-center justify-between p-3 rounded-md">
 		<div class="mx-2">
 			<p v-text="name" class="font-bold mr-6"></p>
 			<span v-text="info" class="font-light text-vlue-300"></span>
