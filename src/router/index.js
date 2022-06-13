@@ -31,7 +31,7 @@ const routes = [
 		],
 	},
 	{ path: '/about', name: 'About', component: () => import('@/views/About.vue') },
-	{ path: '/profile', name: 'Profile', component: () => import('@/views/Profile.vue') },
+	{ path: '/cart', name: 'Cart', component: () => import('@/views/Cart.vue') },
 	{
 		path: '/courses/:slug',
 		name: 'DetailCourse',

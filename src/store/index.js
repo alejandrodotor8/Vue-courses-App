@@ -22,7 +22,7 @@ const store = createStore({
 			)
 		},
 		addCourseToCart({ cart }, courseID) {
-			cart.push(courseID)
+			if (!cart.includes(courseID)) cart.push(courseID)
 		},
 		changeFavStatus({ favCoursesID }, courseID) {
 			let index = favCoursesID.indexOf(courseID)
@@ -31,7 +31,6 @@ const store = createStore({
 			} else {
 				favCoursesID.push(courseID)
 			}
-			console.log(favCoursesID)
 		},
 	},
 	getters: {
