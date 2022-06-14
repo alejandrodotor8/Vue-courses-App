@@ -18,12 +18,12 @@
 				placeholder="Search..."
 				class="mx-6 appearance-none border rounded w-56 h-8 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-emerald-500"
 			/>
-			<router-link to="/cart" class="relative">
+			<div class="relative">
 				<img src="/img/svg/shoppingcart.svg" alt="cart" class="w-8 mx-3" />
 				<span v-show="cartLength > 0" class="text-white text-sm absolute top-1/2 left-1/2 transform_center pb-1 pl-1.5">
 					{{ cartLength }}
 				</span>
-			</router-link>
+			</div>
 
 			<a to="#" class="mx-3"><img src="/img/profile.png" style="width:44px;"/></a>
 		</div>

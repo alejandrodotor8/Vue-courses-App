@@ -24,14 +24,14 @@ const routes = [
 		children: [
 			{
 				path: ':slug',
-				name: 'CartCourses',
-				component: () => import('@/views/Courses/CartCourses.vue'),
+				name: 'CardCourses',
+				component: () => import('@/views/Courses/CardCourses.vue'),
 				props: (route) => ({ slug: route.params.slug }),
 			},
 		],
 	},
 	{ path: '/about', name: 'About', component: () => import('@/views/About.vue') },
-	{ path: '/cart', name: 'Cart', component: () => import('@/views/Cart.vue') },
+	{ path: '/order', name: 'Order', component: () => import('@/views/Order.vue') },
 	{
 		path: '/courses/:slug',
 		name: 'DetailCourse',
