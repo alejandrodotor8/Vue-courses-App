@@ -4,7 +4,9 @@
 			<p v-text="name" class="font-bold mr-6"></p>
 			<span v-text="info" class="font-light text-vlue-300"></span>
 		</div>
-		<div class="rounded-full border-4 border-vue-400 w-11 h-11 mx-2"></div>
+		<div class="rounded-full border-4 border-vue-400 w-14 h-14 mx-2 flex items-center justify-center">
+			<img :src="'/img/home/' + img" alt="career logo" class="" />
+		</div>
 	</div>
 </template>
 
