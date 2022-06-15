@@ -21,8 +21,10 @@ const store = createStore({
 					item.teacher.toLowerCase().includes(word.toLowerCase())
 			)
 		},
-		addCourseToCart({ cart }, courseID) {
-			if (!cart.includes(courseID)) cart.push(courseID)
+		addCourseToCart({ cart, listCourses }, courseID) {
+			let index = listCourses.findIndex((item) => item.id === courseID)
+
+			if (!cart.includes(index)) cart.push(index)
 		},
 		changeFavStatus({ favCoursesID }, courseID) {
 			let index = favCoursesID.indexOf(courseID)

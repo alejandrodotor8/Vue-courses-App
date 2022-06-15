@@ -6,10 +6,8 @@
 			<span class="block text-sm mx-6 mt-2">{{ course.teacher }}</span>
 			<img src="/img/svg/stars.svg" class="mx-6" style="width: 58px;" />
 			<div class="flex text-sm mx-6 justify-end my-2">
-				<span class="block text-slate-400" style="text-decoration: line-through">
-					{{ course.price_original }}
-				</span>
-				<span class="block font-semibold">{{ course.price }}</span>
+				<span class="block text-slate-400 line-through pr-1"> ${{ course.price_original }} </span>
+				<span class="block font-semibold">${{ course.price }}</span>
 			</div>
 			<div class="flex items-center justify-between mx-6 mt-4">
 				<button @click.prevent="changeFav(course.id)">
