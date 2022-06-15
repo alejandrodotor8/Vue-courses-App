@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="cart absolute flex items-center justify-center flex-col w-96 min-h-40 py-4 top-16 right-16 bg-vgrey-300 rounded-md shadow-md"
+		class="cart absolute flex items-center justify-center flex-col w-100 min-h-40 py-4 top-16 right-16 bg-vgrey-300 rounded-md shadow-md"
 	>
 		<CartItem v-for="course in courses" :key="course.id" :course="course" />
 		<div class="w-full px-4">
