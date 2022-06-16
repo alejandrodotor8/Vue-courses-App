@@ -14,25 +14,25 @@ const store = createStore({
 		}
 	},
 	mutations: {
-		filterCourses({ filtered, listCourses }, word) {
-			filtered = listCourses.filter(
+		filterCourses(state, word) {
+			state.filtered = state.listCourses.filter(
 				(item) =>
 					item.title.toLowerCase().includes(word.toLowerCase()) ||
 					item.teacher.toLowerCase().includes(word.toLowerCase())
 			)
 		},
-		addCourseToCart({ cart }, courseID) {
-			if (!cart.includes(courseID)) cart.push(courseID)
+		addCourseToCart(state, courseID) {
+			if (!state.cart.includes(courseID)) state.cart.push(courseID)
 		},
-		deleteItemFromCart({ cart }, courseID) {
-			cart.splice(cart.indexOf(courseID), 1)
+		deleteItemFromCart(state, courseID) {
+			state.cart.splice(state.cart.indexOf(courseID), 1)
 		},
-		changeFavStatus({ favCoursesID }, courseID) {
-			let index = favCoursesID.indexOf(courseID)
+		changeFavStatus(state, courseID) {
+			let index = state.favCoursesID.indexOf(courseID)
 			if (index > -1) {
-				favCoursesID.splice(index, 1)
+				state.favCoursesID.splice(index, 1)
 			} else {
-				favCoursesID.push(courseID)
+				state.favCoursesID.push(courseID)
 			}
 		},
 	},
