@@ -41,7 +41,7 @@
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac elementum tellus aliquet maecenas arcu adipiscing
 				nulla vel.
 			</p>
-			<img class="w-8/12 py-8" src="/img/home/platforms.png" alt="people studing" />
+			<img class="w-8/12 py-8" src="/img/home/Platforms.png" alt="people studing" />
 		</section>
 		<TheFooter></TheFooter>
 	</main>
