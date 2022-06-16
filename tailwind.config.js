@@ -16,9 +16,15 @@ module.exports = {
 				vorange: {
 					500: '#F47868',
 				},
+				vgrey: {
+					300: '#EFF1F3',
+				},
 			},
 			height: {
 				'82': '21rem',
+			},
+			width: {
+				'100': '28rem',
 			},
 		},
 	},

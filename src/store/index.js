@@ -24,6 +24,9 @@ const store = createStore({
 		addCourseToCart({ cart }, courseID) {
 			if (!cart.includes(courseID)) cart.push(courseID)
 		},
+		deleteItemFromCart({ cart }, courseID) {
+			cart.splice(cart.indexOf(courseID), 1)
+		},
 		changeFavStatus({ favCoursesID }, courseID) {
 			let index = favCoursesID.indexOf(courseID)
 			if (index > -1) {
