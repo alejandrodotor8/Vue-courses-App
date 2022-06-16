@@ -35,7 +35,7 @@
 			<button class="btn bg-vue-400 text-white border-2 border-white">Explore more</button>
 		</section>
 		<section class="flex items-center justify-center px-8 flex-col m-4">
-			<img class="w-3/12" src="/img/home/platform.png" alt="people studing" />
+			<img class="w-3/12" src="./img/home/platform.png" alt="people studing" />
 			<h2 class="font-medium text-4xl my-8">The best course platforms</h2>
 			<p class="mb-8 w-3/12">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac elementum tellus aliquet maecenas arcu adipiscing
